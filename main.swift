@@ -1,16 +1,29 @@
-// var TestA = readLine()
-// print(TestA!)
-// var TestB = 0
-// TestB = 34
-// print
-
 import Foundation
-import Glibc
 
-print("Please enter number 1")
-var num1 = (readLine()!)
-print("Please enter number 2")
-var num2 = (readLine()!)
 
-var sum = num1 + " " + num2
-print("The sum of \(num1) and \(num2) is \(sum)")
+// Input Section
+print("For the Quadratic equation ax2 + bx + c:")
+print ("Enter a")
+var numA = Double(readLine()!)!
+print ("Enter b")
+var numB = Double(readLine()!)!
+print("Enter c")
+var numC = Double(readLine()!)!
+
+//Quadratic Solving section
+
+// Solving Square Root
+
+var base = (pow(numB, 2)) - (4 * numA * numC)
+var root = pow(base, 0.5)
+
+// solving equation
+
+var x1 = (-numB + root) / (2 * numA)
+var x2 = (-numB - root) / (2 * numA)
+
+
+//Result
+print(" ")
+//print(x1, " ", x2)
+print("For the quadratic equation \(numA)x^2 + \(numB)x + \(numC) , x = (\(x1), \(x2))")
