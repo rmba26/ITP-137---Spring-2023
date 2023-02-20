@@ -25,4 +25,6 @@ var USDP = (PerS * 0.26)
 
 var TUSD = USDC + USDB + USDP 
 
+//Output
+
 print ("US Dollars = $ \(TUSD)")
