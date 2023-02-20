@@ -2,7 +2,7 @@ import Foundation
 
 
 // Input Section
-print("For the Quadratic equation ax2 + bx + c:")
+print("For the Quadratic equation ax^2 + bx + c:")
 print ("Enter a")
 var numA = Double(readLine()!)!
 print ("Enter b")
@@ -25,5 +25,5 @@ var x2 = (-numB - root) / (2 * numA)
 
 //Result
 print(" ")
-//print(x1, " ", x2)
+
 print("For the quadratic equation \(numA)x^2 + \(numB)x + \(numC) , x = (\(x1), \(x2))")
