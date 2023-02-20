@@ -1,29 +1,28 @@
 import Foundation
 
-
-// Input Section
-print("For the Quadratic equation ax2 + bx + c:")
-print ("Enter a")
-var numA = Double(readLine()!)!
-print ("Enter b")
-var numB = Double(readLine()!)!
-print("Enter c")
-var numC = Double(readLine()!)!
-
-//Quadratic Solving section
-
-// Solving Square Root
-
-var base = (pow(numB, 2)) - (4 * numA * numC)
-var root = pow(base, 0.5)
-
-// solving equation
-
-var x1 = (-numB + root) / (2 * numA)
-var x2 = (-numB - root) / (2 * numA)
+import Glibc
 
 
-//Result
-print(" ")
-//print(x1, " ", x2)
-print("For the quadratic equation \(numA)x^2 + \(numB)x + \(numC) , x = (\(x1), \(x2))")
+print("Enter Amount of Columbian Pesos")
+
+var ColP = Double(readLine()!)!
+
+print("Enter Amount of Brazilian Reales")
+
+var BraR = Double(readLine()!)!
+
+print("Enter Amount of Peruvian Soles")
+
+var PerS = Double(readLine()!)!
+
+// Calculations
+
+var USDC = (ColP * 0.00020)
+
+var USDB = (BraR * 0.19)
+
+var USDP = (PerS * 0.26)
+
+var TUSD = USDC + USDB + USDP 
+
+print ("US Dollars = $ \(TUSD)")
