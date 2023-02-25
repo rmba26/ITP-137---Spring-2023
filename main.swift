@@ -1,22 +1,17 @@
-import Foundation
-import Glibc
+// 
+// var courseCode = true
+// print(type(of): courseCode))
+// print(courseCode)
+
+// var temp = 0.0
+// temp = Double(readLine()!)!
+// print(temp)
 
 
+var numOne = Int(readLine()!)!
+var numTwo = Int(readLine()!)!
+var div = numOne / numTwo
+print("the division of two numbers are " + String(div))
 
-for i in 1...100 {
-if (i.isMultiple(of: 3)) && (i.isMultiple(of: 5)) {
-  print("FizzBuzz")
-}
-
-  else  if (i.isMultiple(of: 3)) {
- print("Fizz")
-} 
-  else if (i.isMultiple(of: 5)) {
-  print("Buzz")
-  }
-    
-else {
- print(i) 
-}
-
-}
+var mod = numOne % numTwo
+print("the remainder of two numbers are " + Int(mod))
