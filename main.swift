@@ -1,17 +1,65 @@
-// 
-// var courseCode = true
-// print(type(of): courseCode))
-// print(courseCode)
-
-// var temp = 0.0
-// temp = Double(readLine()!)!
-// print(temp)
+print("Please enter a string") 
 
 
-var numOne = Int(readLine()!)!
-var numTwo = Int(readLine()!)!
-var div = numOne / numTwo
-print("the division of two numbers are " + String(div))
+  if let input = readLine() {
 
-var mod = numOne % numTwo
-print("the remainder of two numbers are " + Int(mod))
+     if let charValue = mostFrequentCharacter(input){
+  
+      
+      print("The most frequent character is " +  String(charValue))
+
+    
+    }
+
+  }
+else {
+
+  print ("error try again")
+}
+
+
+
+
+
+
+
+
+
+func mostFrequentCharacter(_ input: String) -> Character? { 
+
+
+  var maxCount = 0
+  
+  var maxChar: Character?
+
+  
+
+  for char in input {
+
+   
+    var count = 0 
+
+    for otherChar in input {
+        
+      
+       
+        if otherChar == char {
+
+      
+        count+=1
+        
+      }  
+    }
+    if count > maxCount {
+
+      maxChar = char
+      maxCount = count
+    }
+
+  
+  
+  }
+
+return maxChar
+  
+} 
